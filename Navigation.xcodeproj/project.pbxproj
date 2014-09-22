@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		02137DEE19CF3D8D00B22916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02137DED19CF3D8D00B22916 /* AppDelegate.swift */; };
 		02137DF119CF3D8D00B22916 /* Navigation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02137DEF19CF3D8D00B22916 /* Navigation.xcdatamodeld */; };
-		02137DF319CF3D8D00B22916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02137DF219CF3D8D00B22916 /* ViewController.swift */; };
 		02137DF619CF3D8D00B22916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02137DF419CF3D8D00B22916 /* Main.storyboard */; };
 		02137DF819CF3D8D00B22916 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02137DF719CF3D8D00B22916 /* Images.xcassets */; };
 		02137DFB19CF3D8D00B22916 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02137DF919CF3D8D00B22916 /* LaunchScreen.xib */; };
 		02137E0719CF3D8E00B22916 /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02137E0619CF3D8E00B22916 /* NavigationTests.swift */; };
+		02137E1119CF3DBE00B22916 /* TaskManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02137E1019CF3DBE00B22916 /* TaskManagerViewController.swift */; };
+		02137E1319CF44E000B22916 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02137E1219CF44E000B22916 /* TaskDetailViewController.swift */; };
+		02137E1519CF480E00B22916 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02137E1419CF480E00B22916 /* Tasks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +33,15 @@
 		02137DEC19CF3D8D00B22916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02137DED19CF3D8D00B22916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02137DF019CF3D8D00B22916 /* Navigation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Navigation.xcdatamodel; sourceTree = "<group>"; };
-		02137DF219CF3D8D00B22916 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		02137DF519CF3D8D00B22916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02137DF719CF3D8D00B22916 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		02137DFA19CF3D8D00B22916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		02137E0019CF3D8D00B22916 /* NavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02137E0519CF3D8E00B22916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02137E0619CF3D8E00B22916 /* NavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
+		02137E1019CF3DBE00B22916 /* TaskManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManagerViewController.swift; sourceTree = "<group>"; };
+		02137E1219CF44E000B22916 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		02137E1419CF480E00B22916 /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +83,14 @@
 		02137DEA19CF3D8D00B22916 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				02137E1219CF44E000B22916 /* TaskDetailViewController.swift */,
 				02137DED19CF3D8D00B22916 /* AppDelegate.swift */,
-				02137DF219CF3D8D00B22916 /* ViewController.swift */,
+				02137E1019CF3DBE00B22916 /* TaskManagerViewController.swift */,
 				02137DF419CF3D8D00B22916 /* Main.storyboard */,
 				02137DF719CF3D8D00B22916 /* Images.xcassets */,
 				02137DF919CF3D8D00B22916 /* LaunchScreen.xib */,
 				02137DEF19CF3D8D00B22916 /* Navigation.xcdatamodeld */,
+				02137E1419CF480E00B22916 /* Tasks.swift */,
 				02137DEB19CF3D8D00B22916 /* Supporting Files */,
 			);
 			path = Navigation;
@@ -215,9 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02137DF319CF3D8D00B22916 /* ViewController.swift in Sources */,
 				02137DEE19CF3D8D00B22916 /* AppDelegate.swift in Sources */,
 				02137DF119CF3D8D00B22916 /* Navigation.xcdatamodeld in Sources */,
+				02137E1119CF3DBE00B22916 /* TaskManagerViewController.swift in Sources */,
+				02137E1519CF480E00B22916 /* Tasks.swift in Sources */,
+				02137E1319CF44E000B22916 /* TaskDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Navigation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Navigation;
 			};
 			name = Debug;
 		};
@@ -352,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Navigation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Navigation;
 			};
 			name = Release;
 		};
@@ -409,6 +417,7 @@
 				02137E0C19CF3D8E00B22916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02137E0D19CF3D8E00B22916 /* Build configuration list for PBXNativeTarget "NavigationTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				02137E0F19CF3D8E00B22916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
